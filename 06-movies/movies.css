@@ -1,0 +1,58 @@
+movies {
+    display: block;
+    background-color: mintcream;
+    font-family: sans-serif;
+    margin: 1em;
+}
+
+movie {
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 2em;
+    padding: 0.25em;
+}
+
+title {
+    display: none;
+}
+
+title:lang(en) {
+    display: inline;
+}
+
+year::before {
+    content: "(";
+}
+
+year::after {
+    content: "):";
+}
+
+genre {
+    display: inline-block;
+    width: 5em;
+    text-align: center;
+    padding: 0.25em;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 0.25em;
+}
+
+rating {
+    padding: 0.25em;
+    background-color: hotpink;
+    color: white;
+    border-radius: 0.25em;
+}
+
+rating::after {
+    content: "/10";
+}
+
+votes::before {
+    content: " from ";
+}
+
+votes::after {
+    content: " ratings";
+}

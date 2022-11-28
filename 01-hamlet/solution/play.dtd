@@ -1,0 +1,8 @@
+<!ELEMENT play (author, title, act*)>
+<!ELEMENT act (title, scene*)>
+<!ELEMENT scene (title, paragraph*)>
+<!ELEMENT paragraph (speaker?, (line | stagedir)*)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT speaker (#PCDATA)>
+<!ELEMENT line (#PCDATA)>
+<!ELEMENT stagedir (#PCDATA)>

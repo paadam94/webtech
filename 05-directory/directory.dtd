@@ -1,0 +1,11 @@
+<!ENTITY % name.attr "name CDATA #REQUIRED">
+
+<!ELEMENT directory (directory | file)*>
+<!ELEMENT file EMPTY>
+
+
+<!ATTLIST directory name CDATA #REQUIRED>
+
+<!ATTLIST file
+    %name.attr;
+    size CDATA #REQUIRED>
